@@ -1,0 +1,351 @@
+﻿<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>IITP Digital Outlook</title><style>
+:root{--n:#0d315f;--b:#0765bd;--y:#ffdc18;--bg:#f2f3f0;--i:#142238;--m:#61758d;--l:#d5dde6;--w:#fff;--g:#0f9b6a}*{box-sizing:border-box}body{margin:0;background:var(--bg);font:14px/1.6 "Pretendard","Noto Sans KR",Arial,sans-serif;color:var(--i)}header{height:92px;background:var(--b);color:#fff;display:flex;align-items:center;padding:0 max(28px,calc((100vw - 1720px)/2));gap:16px}.seal{width:54px;height:54px;border-radius:50%;background:var(--y);color:#073c78;display:grid;place-items:center;font-size:22px;font-weight:900}.brand small{display:block;letter-spacing:.14em;font-weight:800;font-size:11px}.brand b{font-size:23px;letter-spacing:-.05em}.right{margin-left:auto;border:1px solid #ffffff3d;border-radius:10px;padding:10px 14px;font-weight:700}.shell{max-width:1720px;margin:auto;padding:24px 30px 50px;display:grid;grid-template-columns:425px 1fr;gap:26px}.left{display:grid;align-content:start;gap:22px}.card,.team,.draft{background:var(--w);border:1px solid var(--l);border-radius:18px;box-shadow:0 12px 30px #183b6314}.card{padding:24px}.head{display:flex;justify-content:space-between;align-items:center;margin-bottom:15px}.head h2{font-size:17px;margin:0}.pill{background:var(--y);border-radius:99px;padding:4px 10px;font-size:11px;font-weight:900;color:#1b4c79}.drop{min-height:240px;border:2px dashed #91b2d1;border-radius:16px;background:#f6fbff;display:grid;place-content:center;text-align:center;padding:25px;cursor:pointer}.drop b{font-size:18px;margin:12px 0 3px}.drop span,.files,.note{font-size:12px;color:var(--m)}.drop input{display:none}.select,.go{border:0;border-radius:10px;background:var(--b);color:#fff;padding:12px 17px;font-weight:800;font-size:14px;cursor:pointer;margin-top:14px}.files{list-style:none;padding:0;margin:14px 0 0}.files li{display:flex;justify-content:space-between;padding:7px 0;border-bottom:1px solid #edf1f5}.set{display:flex;justify-content:space-between;gap:8px;padding:10px 0;border-top:1px solid #e8edf2}.set b,.set select{color:#084f9a;font-weight:800;border:0;background:#fff;text-align:right}.set input{border:0;text-align:right;width:155px;font:inherit}.go{width:100%;background:var(--y);color:#6c7b8e;padding:16px;font-size:16px}.go.ready{background:var(--b);color:#fff}.team{padding:22px 24px}.team h1{font-size:22px;margin:0;letter-spacing:-.04em}.team p{margin:3px 0 17px;color:var(--m);font-size:13px}.agents{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.agent{position:relative;border:1px solid #d8dee5;border-radius:16px;padding:18px;min-height:230px;overflow:hidden}.agent:after{content:"";position:absolute;right:-36px;top:-36px;width:115px;height:115px;border-radius:50%;background:#fff3bc}.agent h3,.agent small,.state{position:relative;z-index:1}.agent h3{font-size:16px;margin:0}.agent small,.state{color:var(--m);font-size:12px}.avatar{height:105px;display:grid;place-items:center;position:relative;z-index:1}.avatar img{width:90px;height:90px;object-fit:contain;border-radius:13px}.logo{width:90px;height:90px;border-radius:13px;background:var(--n);display:grid;place-items:center;color:#fff;font-style:italic;font-weight:900;font-size:24px;letter-spacing:-2px}.bar{height:7px;background:#e9eef1;border-radius:9px;margin-top:27px;overflow:hidden}.bar i{display:block;width:0;height:100%;background:var(--b);transition:.35s}.agent.active{border-color:#79aee5}.agent.active .state{color:var(--b);font-weight:800}.agent.done{border-color:#a6d9c9}.agent.done .state{color:var(--g);font-weight:800}.agent.done .bar i{background:var(--g)}.draft{min-height:660px;overflow:hidden}.drafthead{padding:23px 24px 17px;border-bottom:1px solid var(--l);display:flex;align-items:start;gap:16px}.drafthead h2{margin:0;font-size:22px}.drafthead p{margin:3px 0 0;color:var(--m);font-size:12px}.actions{margin-left:auto;display:flex;gap:8px}.btn{border:1px solid #d6e0e9;border-radius:10px;background:#fff;color:#0c4e93;padding:10px 12px;font-size:12px;font-weight:800;cursor:pointer}.btn.main{background:var(--b);color:#fff;border-color:var(--b)}.tabs{display:flex;border-bottom:1px solid var(--l);padding:10px 17px 0;overflow:auto}.tab{background:transparent;border:0;border-bottom:3px solid transparent;padding:12px 13px;color:#5d7088;font:800 13px inherit;white-space:nowrap;cursor:pointer}.tab.active{color:var(--b);border-color:var(--b)}article{padding:28px 30px;min-height:510px;outline:0;line-height:1.9}article:focus{box-shadow:inset 0 0 0 2px #9fc9ef}article h2{font-size:24px;margin:0 0 17px;color:var(--n)}article h3{font-size:17px;color:#084f9a;margin:24px 0 9px}article p{margin:0 0 12px}article ul{margin:0 0 12px;padding-left:19px}.cite{position:relative;border-bottom:1px dotted #2c78c7;cursor:help}.pop{display:none;position:absolute;z-index:3;left:0;bottom:100%;width:245px;padding:10px;background:#112942;color:#fff;border-radius:9px;font-size:11px}.cite:hover .pop,.cite:focus .pop{display:block}.pop a{color:#9edcff}.tbl{width:100%;border-collapse:collapse;font-size:12px;margin:14px 0}.tbl th,.tbl td{border:1px solid #d0dbe8;padding:8px;vertical-align:top}.tbl th{background:#edf4fb}.source{font-size:11px;color:var(--m)}.live{position:fixed;right:28px;bottom:28px;width:350px;background:#152534;color:#b8cbe0;border-radius:16px;overflow:hidden;box-shadow:0 12px 35px #06121e44;font:12px/1.7 ui-monospace,monospace}.live b{display:block;padding:12px 15px;background:#0c1b27;color:#edf8ff}.live div{min-height:130px;padding:14px 15px}.ok{color:#a3e6c0}.toast{position:fixed;left:50%;bottom:26px;transform:translate(-50%,20px);background:var(--n);color:#fff;border-radius:9px;padding:10px 14px;opacity:0;transition:.2s}.toast.show{opacity:1;transform:translate(-50%,0)}@media(max-width:1050px){.shell{grid-template-columns:1fr}.left{grid-template-columns:1fr 1fr}.agents{grid-template-columns:1fr}.agent{min-height:145px;display:grid;grid-template-columns:1fr 110px;align-items:center}.agent .bar{grid-column:1/-1;margin-top:0}.live{display:none}}@media(max-width:620px){header{padding:16px;height:auto}.right{display:none}.shell{display:block;padding:16px}.left{display:block}.left .card{margin-bottom:18px}.agents{grid-template-columns:1fr}.drafthead{display:block}.actions{margin:14px 0 0}article{padding:20px}}
+</style></head><body>
+<header><div class="seal">I</div><div class="brand"><small>DOCUMENT INTELLIGENCE</small><b>IITP Digital Outlook</b></div><div class="right">개인 메뉴 ⚙</div></header><main class="shell"><aside class="left"><section class="card"><div class="head"><h2>정책자료 업로드</h2><span class="pill">STEP 01</span></div><div class="drop" id="dropZone" role="button" tabindex="0" aria-label="정책자료 파일 업로드"><span style="font-size:40px;color:#0d315f">↥</span><b>정책자료 파일을 이곳에 놓으세요</b><span>TXT / PDF / HWP / HWPX · 여러 파일 선택 가능</span><button class="select" id="fileButton" type="button">파일 선택</button></div><input id="files" type="file" multiple accept=".txt,.pdf,.hwp,.hwpx" style="position:absolute;width:1px;height:1px;opacity:0;overflow:hidden"><ul class="files" id="list"><li>아직 추가된 파일이 없습니다</li></ul></section><section class="card"><div class="head"><h2>변환 설정</h2><span class="pill">STEP 02</span></div><div class="set"><span>OpenAI API</span><input placeholder="API 키 입력" type="password"></div><div class="set"><span>선호 모델</span><select><option>gpt-5</option><option>gpt-5-mini</option><option>gpt-4.1</option></select></div><div class="set"><span>작성 분량</span><b>A4 10페이지 내외</b></div><div class="set"><span>결과 구성</span><b>Ⅰ·Ⅱ·Ⅲ 병렬 분석</b></div><button class="go" id="run">에이전트 팀 가동 →</button><p class="note">API 키는 브라우저에 저장하지 않으며 모델 호출에만 사용</p></section></aside><section class="right"><section class="team"><h1>보고서 변환 에이전트 팀</h1><p>각자의 책상에서 동시에 움직이고, 결과는 순서대로 인계합니다.</p><div class="agents"><article class="agent" id="a1"><h3>조사 담당 · 정이</h3><small>Evidence researcher</small><div class="avatar"><img src="file:///C:/Users/User/AppData/Local/Temp/codex-clipboard-c8505ad4-e27d-4201-adda-dfe1f2f94637.png" alt="정이"></div><div class="state">대기 중 · 보고서 근거를 기다리고 있어요.</div><div class="bar"><i></i></div></article><article class="agent" id="a2"><h3>분석 담당 · 책이</h3><small>Policy mapper</small><div class="avatar"><img src="file:///C:/Users/User/AppData/Local/Temp/codex-clipboard-8a1fb048-1e26-41d4-91a3-33c3883c85c1.png" alt="책이"></div><div class="state">대기 중 · Evidence Pack을 기다리고 있어요.</div><div class="bar"><i></i></div></article><article class="agent" id="a3"><h3>작성 담당 · IITP</h3><small>Policy report writer</small><div class="avatar"><div class="logo">IITP</div></div><div class="state">대기 중 · Report Blueprint을 기다리고 있어요.</div><div class="bar"><i></i></div></article></div></section><section class="draft"><div class="drafthead"><div><h2>보고서 초안</h2><p>섹션별 결과를 검토하고 직접 수정할 수 있습니다.</p></div><div class="actions"><button class="btn" id="copy">전체 복사</button><button class="btn main" id="down">HWP 호환 초안 ↓</button></div></div><nav class="tabs"><button class="tab active" data-k="i">Ⅰ. 개요</button><button class="tab" data-k="b">Ⅱ. 본문</button><button class="tab" data-k="s">Ⅲ. 시사점</button></nav><article id="doc" contenteditable="true"></article></section></section></main><aside class="live"><b>● 에이전트 라이브 로그</b><div id="log">준비 완료 · 정책자료를 업로드해 주세요.</div></aside><div class="toast" id="toast"></div><script>
+(() => {
+  const $ = (id) => document.getElementById(id);
+  const doc = $("doc");
+  const log = $("log");
+  const run = $("run");
+  const fileInput = $("files");
+  const dropZone = $("dropZone");
+  const fileButton = $("fileButton");
+  const fileList = $("list");
+  const tabs = Array.from(document.querySelectorAll(".tab"));
+  const agents = { research: $("a1"), analysis: $("a2"), writing: $("a3") };
+  const uploadedFiles = [];
+  let activeKey = "i";
+  let sections = createDraft();
+
+  function escapeHtml(value) {
+    return String(value || "").replace(/[&<>"']/g, (ch) => ({
+      "&": "&amp;", "<": "&lt;", ">": "&gt;", "\"": "&quot;", "'": "&#039;"
+    }[ch]));
+  }
+
+  function toast(message) {
+    const node = $("toast");
+    if (!node) return;
+    node.textContent = message;
+    node.classList.add("show");
+    window.setTimeout(() => node.classList.remove("show"), 1800);
+  }
+
+  function inferTopic(name) {
+    const base = name.replace(/\.[^.]+$/, "").replace(/^#+\s*/, "").trim();
+    const lower = base.toLowerCase();
+    if (lower.includes("ai") || base.includes("인공지능")) return "AI·디지털 정책";
+    if (base.includes("양자") || lower.includes("quantum")) return "양자·첨단컴퓨팅 정책";
+    if (base.includes("피지컬") || lower.includes("physical")) return "피지컬 AI 정책";
+    if (base.includes("데이터") || lower.includes("data")) return "데이터·디지털 인프라 정책";
+    return base || "디지털·AI 정책";
+  }
+
+  function inferCountry(name, index) {
+    const rules = [
+      [/미국|usa|united states|us/i, "미국"],
+      [/영국|uk|united kingdom|britain/i, "영국"],
+      [/일본|japan|jp/i, "일본"],
+      [/중국|china|cn/i, "중국"],
+      [/싱가포르|singapore/i, "싱가포르"],
+      [/eu|유럽|europe/i, "EU"],
+      [/인도|india/i, "인도"],
+      [/캐나다|canada/i, "캐나다"],
+      [/호주|australia/i, "호주"]
+    ];
+    const found = rules.find(([pattern]) => pattern.test(name));
+    return found ? found[1] : `정책자료 ${index + 1}`;
+  }
+
+  function getPolicyItems() {
+    const files = uploadedFiles.length ? uploadedFiles : [
+      { name: "미국 AI 컴퓨팅·안보 전략.txt", size: 5120 },
+      { name: "일본 디지털·AI 정책.txt", size: 5120 },
+      { name: "EU AI·데이터 규제 전략.txt", size: 5120 },
+      { name: "중국 AI·양자·디지털 전략.txt", size: 5120 }
+    ];
+    const seen = new Map();
+    files.forEach((file, index) => {
+      const country = inferCountry(file.name, index);
+      const topic = inferTopic(file.name);
+      const key = `${country}-${topic}`;
+      if (!seen.has(key)) seen.set(key, { country, topic, name: file.name, index: seen.size + 1 });
+    });
+    return Array.from(seen.values());
+  }
+
+  function p(lines) {
+    return lines.map((line) => `<p>${line}</p>`).join("");
+  }
+
+  function cite(label, fileName) {
+    const safe = escapeHtml(fileName);
+    return `<span class="cite" tabindex="0">${label}<span class="pop">근거 파일: ${safe}<br><a href="#">원문 위치 확인</a></span></span>`;
+  }
+
+  function createOverview(items) {
+    const names = items.map((item) => item.country).join("·");
+    return `
+      <h2>Ⅰ. 개요</h2>
+      ${p([
+        "■ 최근 글로벌 디지털·AI 정책은 기술 패권 경쟁, 공급망 안정성, 공공 인프라 고도화, 안전성 확보 요구가 결합되며 국가 전략 차원의 종합 정책으로 확대",
+        "○ 주요국은 단일 산업 육성을 넘어 연구개발, 인프라, 법·제도, 인재, 국제협력을 묶은 정책 패키지를 통해 중장기 경쟁력 확보 추진",
+        "○ 생성형 AI 확산, 고성능 컴퓨팅 수요 증가, 데이터 거버넌스 강화, 양자·피지컬 AI 등 차세대 기술 부각에 따라 정책 범위 확대",
+        `○ 이번 보고서는 입력 자료에 포함된 ${names} 정책자료를 병렬 검토하여 국가별 추진 배경, 주요 내용, 기대효과를 동일한 틀로 정리`,
+        "○ 확인 가능한 자료에 근거한 정책 방향을 중심으로 정리하고, 원문에서 직접 확인되지 않는 내용은 가능성·전망·방향 수준의 완곡한 표현으로 제한",
+        "■ 주요국 정책은 AI 활용 확산과 안전성 확보를 동시에 추구하면서 국가 R&D 포트폴리오와 공공 조달, 규제 체계, 국제 표준 연계를 함께 강화",
+        "○ 정책 목표는 기술 선점, 산업 전환, 사회적 신뢰 확보, 안보·공급망 리스크 대응으로 다층화",
+        "○ 정책 수단은 대규모 투자, 테스트베드, 공공 조달, 법·제도 정비, 국제 협력 네트워크 구축으로 구체화",
+        "○ 우리나라에는 디지털·AI R&D의 전략 분야 선정, 실증 인프라 구축, 안전성 평가 체계 마련, 글로벌 협력 확대 필요성 부각"
+      ])}
+      <p>■ 다음 표는 업로드된 정책자료를 기준으로 본문에서 병렬 분석할 국가·정책 단위를 정리한 내용</p>
+      <table class="tbl"><thead><tr><th>구분</th><th>국가·정책 단위</th><th>핵심 검토 관점</th><th>원문 근거</th></tr></thead><tbody>
+      ${items.map((item) => `<tr><td>${item.index}</td><td>${escapeHtml(item.country)} ${escapeHtml(item.topic)}</td><td>추진 배경·주요 내용·기대효과 병렬 분석</td><td>${cite("Evidence ID", item.name)}</td></tr>`).join("")}
+      </tbody></table>
+      <p class="source">자료: 사용자가 업로드한 정책자료 파일명을 기준으로 자동 구성</p>`;
+  }
+
+  function countryBlock(item) {
+    return `
+      <h3>${item.index}. ${escapeHtml(item.country)} ${escapeHtml(item.topic)} 추진</h3>
+      ${p([
+        `■ ${escapeHtml(item.country)}은 ${escapeHtml(item.topic)}을 국가 경쟁력과 산업 전환의 핵심 수단으로 설정하고 연구개발·인프라·제도 기반을 결합한 정책 추진`,
+        "○ 기존 디지털 전환 전략과 첨단기술 육성 기조를 연계하여 공공·민간 활용 기반 확대",
+        `– 원문 확인 대상: ${cite("업로드 정책자료", item.name)} 중심 검토`,
+        "○ AI·데이터·컴퓨팅 등 기반 기술의 확산 속도에 대응하여 안전성, 신뢰성, 책임성 확보 요구 부각",
+        "– 세부 수치와 기관명은 원문에서 확인되는 경우 표와 본문에 반영",
+        "○ 글로벌 기술 경쟁과 공급망 재편 흐름 속에서 전략 분야 집중 지원과 국제 협력 필요성 확대",
+        "■ 주요 내용은 정책 목표, 추진 체계, 투자·프로그램, 실증·확산 수단을 중심으로 정리 가능",
+        "○ 정책 목표는 기술 역량 강화, 산업 적용 확대, 공공서비스 혁신, 신뢰 기반 조성을 중심으로 구성",
+        "○ 추진 체계는 관계 부처, 전문기관, 연구기관, 산업계가 참여하는 협력 구조 마련 방향",
+        "○ 투자·프로그램은 핵심 기술 R&D, 데이터·컴퓨팅 인프라, 테스트베드, 인재 양성 등으로 구분",
+        "○ 실증·확산 수단은 공공 조달, 규제 샌드박스, 표준화, 민관 협력 프로젝트와 연계 가능성",
+        "■ 정책 추진에 따라 기술 축적, 산업 적용, 공공부문 활용, 국제 협력 측면의 기대효과 확대",
+        "○ 연구개발 측면에서는 핵심 원천기술과 응용기술의 연계 투자 필요성 강화",
+        "○ 산업 측면에서는 기업의 실증 기회 확대와 초기 시장 창출 효과 기대",
+        "○ 제도 측면에서는 신뢰성·안전성 검증 체계와 책임 있는 활용 기준 마련 필요",
+        "○ 국제 협력 측면에서는 표준, 평가, 상호운용성, 공동 연구 중심의 협력 확대 가능성"
+      ])}
+      <p>■ 추진 배경은 기술 경쟁 심화, 산업 적용 수요 확대, 공공부문 활용 가능성, 신뢰 기반 확보 요구가 복합적으로 작용하며 정책 우선순위 상승</p>
+      ${p([
+        "○ 기술 경쟁 측면에서는 AI·디지털 기반기술이 경제안보와 산업 경쟁력의 핵심 요소로 부각",
+        "– 고성능 컴퓨팅, 데이터, 알고리즘, 서비스 확산 역량이 국가별 정책 역량의 판단 기준으로 확대",
+        "○ 산업 적용 측면에서는 제조, 서비스, 공공, 보건, 교육 등 전 분야에서 디지털 전환 수요 지속",
+        "– 정책자료에서 확인되는 세부 산업·프로그램은 본문 수정 과정에서 원문 근거와 함께 보완 필요",
+        "○ 제도 측면에서는 기술 활용 확대에 따른 안전성, 투명성, 책임성 확보 체계 마련 필요성 증대",
+        "– 규제와 진흥을 분리하지 않고 실증·평가·확산을 함께 설계하는 정책 방향 부각",
+        "○ 국제 환경 측면에서는 주요국 간 표준, 공급망, 연구협력, 데이터 거버넌스 주도권 경쟁 확대",
+        "– 양자·AI·디지털 인프라 등 전략기술의 국제 협력과 자국 내 역량 확보 병행 필요"
+      ])}
+      <p>■ 주요 정책 수단은 전략 투자, 공공 수요 창출, 연구개발 체계화, 평가·검증 인프라, 민관 협력 기반 조성으로 구분</p>
+      ${p([
+        "○ 전략 투자는 원천기술 확보와 산업 현장 적용을 동시에 고려하는 포트폴리오 방식으로 구성 가능",
+        "– 단일 과제 중심 지원보다 기술 성숙도와 활용 분야를 연결하는 단계형 지원 필요",
+        "○ 공공 수요 창출은 초기 시장 형성과 기술 신뢰 확보를 위한 정책 수단으로 활용 가능",
+        "– 공공 조달, 시범사업, 테스트베드, 레퍼런스 프로젝트가 민간 확산의 연결 고리로 작동",
+        "○ 연구개발 체계화는 대학·연구기관·기업의 역할을 분담하고 공동 활용 인프라를 연계하는 방식으로 추진",
+        "– 인재 양성, 데이터 접근성, 컴퓨팅 자원, 실증 환경을 결합한 연구 생태계 조성 필요",
+        "○ 평가·검증 인프라는 안전성, 성능, 보안, 편향성, 상호운용성 등을 점검하는 기반으로 중요성 확대",
+        "– 원문에서 확인되는 평가기관, 기준, 절차, 인증 체계는 표 형태로 추가 정리 필요",
+        "○ 민관 협력은 정부의 전략 방향과 민간의 혁신 역량을 연결하는 실행 체계로 기능",
+        "– 산업계 수요를 반영한 과제 기획과 현장 실증 중심의 환류 구조 마련 필요"
+      ])}
+      <p>■ 기대효과는 기술 자립성 제고, 산업 전환 가속화, 정책 신뢰성 확보, 국제 협력 기반 확대 측면에서 종합적으로 평가 가능</p>
+      ${p([
+        "○ 기술 자립성 측면에서는 핵심기술과 기반 인프라에 대한 장기 투자 정당성 강화",
+        "– 고위험·장기 연구와 단기 실증 과제를 구분하여 균형 있는 투자 구조 마련 필요",
+        "○ 산업 전환 측면에서는 기업의 도입 비용을 낮추고 초기 적용 사례를 축적하는 효과 기대",
+        "– 중소·중견기업의 접근성을 높이는 공동 인프라와 컨설팅·실증 지원 확대 필요",
+        "○ 정책 신뢰성 측면에서는 안전성 검증과 책임 있는 활용 기준을 통해 사회적 수용성 제고 가능",
+        "– 정책 추진 과정에서 투명한 성과 지표와 위험관리 체계를 함께 마련할 필요",
+        "○ 국제 협력 측면에서는 표준, 공동 연구, 평가 상호인정, 인력 교류를 통한 글로벌 연계 확대 가능",
+        "– 국내 R&D 성과가 국제 규범과 시장 진입 조건에 연결되도록 초기 단계부터 협력 설계 필요"
+      ])}
+      <p>■ 다음 표는 ${escapeHtml(item.country)} 정책 단위의 분석 틀을 배경·주요 내용·기대효과 기준으로 요약한 내용</p>
+      <table class="tbl"><thead><tr><th>축</th><th>분석 내용</th><th>확인 방식</th></tr></thead><tbody>
+        <tr><td>배경</td><td>기술 경쟁, 산업 전환, 안전성·신뢰성 확보 요구를 중심으로 정책 추진 배경 정리</td><td>${cite("원문 대조", item.name)}</td></tr>
+        <tr><td>주요 내용</td><td>R&D, 인프라, 제도, 실증, 인재, 국제협력 항목으로 세부 정책 매핑</td><td>${cite("근거 카드", item.name)}</td></tr>
+        <tr><td>기대효과</td><td>국가 경쟁력, 산업 확산, 공공 혁신, 정책 신뢰성 측면의 효과 정리</td><td>${cite("작성 검토", item.name)}</td></tr>
+      </tbody></table>`;
+  }
+
+  function createBody(items) {
+    return `
+      <h2>Ⅱ. 본문</h2>
+      ${p([
+        "■ 본문은 입력 자료에 포함된 모든 국가와 대표 정책 묶음을 1, 2, 3 순서로 나누어 병렬 분석하는 구조로 작성",
+        "○ 각 절은 추진 배경, 주요 내용, 기대효과의 동일한 틀을 적용하여 국가 간 비교 가능성 제고",
+        "○ 원문에서 확인되지 않은 내용은 단정하지 않고 가능성, 전망, 방향, 계획 등 완곡한 표현으로 제한",
+        "○ 예산, 기간, 기관, 프로그램 구조 등 정형 정보는 원문 확인 후 표 형식으로 보강 필요"
+      ])}
+      ${items.map(countryBlock).join("")}
+      <h3>국가별 정책 구조 비교</h3>
+      <p>■ 다음 표는 국가별 정책 목표와 주요 수단을 동일 기준으로 비교하여 공통점과 차이점을 파악하기 위한 내용</p>
+      <table class="tbl"><thead><tr><th>국가</th><th>정책 목표</th><th>주요 수단</th><th>R&D 관점</th></tr></thead><tbody>
+      ${items.map((item) => `<tr><td>${escapeHtml(item.country)}</td><td>${escapeHtml(item.topic)} 기반 경쟁력 확보</td><td>전략 투자·인프라·제도·실증 연계</td><td>핵심기술과 활용 확산의 균형 필요</td></tr>`).join("")}
+      </tbody></table>
+      ${p([
+        "■ 비교 결과, 주요국 정책은 기술 개발 자체보다 실증·확산·규율·국제협력을 함께 설계하는 통합형 정책으로 진화",
+        "○ 국가별 우선순위는 상이하나 공통적으로 AI·디지털 인프라와 신뢰성 확보를 중장기 정책 기반으로 설정",
+        "○ 우리나라는 특정 기술 단위의 단기 지원을 넘어 전략기술 포트폴리오, 공공 수요, 산업 생태계, 글로벌 표준 연계를 결합한 정책 설계 필요"
+      ])}`;
+  }
+
+  function createImplications(items) {
+    return `
+      <h2>Ⅲ. 시사점</h2>
+      ${p([
+        "■ 주요국 병렬 전략은 AI·디지털 기술을 산업 육성 대상이자 국가 운영 인프라로 동시에 격상시키는 구조적 전환을 시사",
+        "○ 공통적으로 기술 주도권 확보, 공공·산업 활용 확산, 안전성·신뢰성 확보, 국제 협력 확대를 결합한 정책 패키지 추진",
+        "○ 국가별 차이는 투자 규모, 규제 강도, 공공 조달 활용도, 민관 협력 방식, 안보 연계 수준에서 나타남",
+        "○ 상호보완 가능성은 기술 표준, 안전성 평가, 데이터·컴퓨팅 인프라, 실증 프로젝트, 전문 인력 교류 영역에서 확대",
+        "○ 한국은 빠른 기술 추격과 산업 적용 역량을 바탕으로 실증 중심 R&D와 제도 기반 신뢰성 확보를 병행할 필요",
+        "■ 국내 디지털·AI R&D 정책은 전략 분야 집중, 검증 인프라, 법·제도, 국제협력을 결합한 포트폴리오 재편 필요",
+        "○ 법·제도 측면에서는 AI 안전성, 데이터 활용, 책임 기준, 공공 조달 연계를 포괄하는 제도 정비 필요",
+        "○ R&D 투자 측면에서는 범용 기반기술, 산업별 적용기술, 안전성 평가기술, 차세대 컴퓨팅을 묶은 전략 투자 강화",
+        "○ 인프라·데이터 측면에서는 고품질 데이터, 컴퓨팅 자원, 테스트베드, 검증 환경을 연계한 공용 기반 마련",
+        "○ 인재·거점 측면에서는 대학·출연연·기업이 공동 활용하는 전문 거점과 실증형 교육 프로그램 확대",
+        "○ 표준·국제협력 측면에서는 주요국의 평가 체계와 상호운용성 논의에 참여하는 글로벌 협력 채널 강화",
+        "○ 산업생태계 측면에서는 중소·중견기업의 실증 참여, 초기 수요 창출, 공공 레퍼런스 확보를 지원하는 확산 정책 추진"
+      ])}
+      <p>■ 다음 표는 국내 대응 방향을 정책 수단별로 정리한 내용</p>
+      <table class="tbl"><thead><tr><th>정책 수단</th><th>국내 대응 방향</th><th>기대 효과</th></tr></thead><tbody>
+        <tr><td>법·제도</td><td>안전성·책임성·데이터 활용 기준 정비</td><td>신뢰 기반 활용 확대</td></tr>
+        <tr><td>R&D 투자</td><td>핵심기술·실증·평가 기술의 포트폴리오형 투자 강화</td><td>전략기술 경쟁력 제고</td></tr>
+        <tr><td>인프라·데이터</td><td>컴퓨팅·데이터·테스트베드 공동 활용 기반 마련</td><td>산업 적용 속도 확대</td></tr>
+        <tr><td>표준·협력</td><td>국제 표준, 공동 연구, 안전성 평가 네트워크 참여 확대</td><td>글로벌 호환성 확보</td></tr>
+      </tbody></table>
+      <p class="source">자료: ${items.map((item) => escapeHtml(item.name)).join(", ")} 기반 자동 초안</p>`;
+  }
+
+  function createDraft() {
+    const items = getPolicyItems();
+    return { i: createOverview(items), b: createBody(items), s: createImplications(items) };
+  }
+
+  function render() {
+    doc.innerHTML = sections[activeKey] || "";
+    tabs.forEach((tab) => tab.classList.toggle("active", tab.dataset.k === activeKey));
+  }
+
+  function saveCurrent() {
+    if (activeKey) sections[activeKey] = doc.innerHTML;
+  }
+
+  function setAgent(node, className, width, message) {
+    node.className = `agent ${className}`;
+    node.querySelector("i").style.width = `${width}%`;
+    node.querySelector(".state").textContent = message;
+  }
+
+  function wait(ms) {
+    return new Promise((resolve) => window.setTimeout(resolve, ms));
+  }
+
+  function renderFiles() {
+    if (!uploadedFiles.length) {
+      fileList.innerHTML = "<li>아직 추가된 파일이 없습니다</li>";
+      run.classList.remove("ready");
+      return;
+    }
+    fileList.innerHTML = uploadedFiles.map((file) =>
+      `<li><span>${escapeHtml(file.name)}</span><span>${Math.ceil(file.size / 1024)} KB</span></li>`
+    ).join("");
+    run.classList.add("ready");
+  }
+
+  function addFiles(fileLikeList) {
+    const files = Array.from(fileLikeList || []);
+    if (!files.length) return;
+    uploadedFiles.push(...files);
+    renderFiles();
+    log.innerHTML = `파일 확인 완료 · ${uploadedFiles.length}개 자료 대기`;
+  }
+
+  tabs.forEach((tab) => {
+    tab.addEventListener("click", () => {
+      saveCurrent();
+      activeKey = tab.dataset.k;
+      render();
+    });
+  });
+
+  fileButton.addEventListener("click", (event) => {
+    event.preventDefault();
+    event.stopPropagation();
+    fileInput.click();
+  });
+  dropZone.addEventListener("click", () => fileInput.click());
+  dropZone.addEventListener("keydown", (event) => {
+    if (event.key === "Enter" || event.key === " ") {
+      event.preventDefault();
+      fileInput.click();
+    }
+  });
+  fileInput.addEventListener("change", (event) => {
+    addFiles(event.target.files);
+    event.target.value = "";
+  });
+  dropZone.addEventListener("dragover", (event) => {
+    event.preventDefault();
+    dropZone.style.background = "#e8f4ff";
+  });
+  dropZone.addEventListener("dragleave", () => { dropZone.style.background = ""; });
+  dropZone.addEventListener("drop", (event) => {
+    event.preventDefault();
+    dropZone.style.background = "";
+    addFiles(event.dataTransfer.files);
+  });
+
+  run.addEventListener("click", async () => {
+    if (!uploadedFiles.length) {
+      toast("정책자료를 먼저 업로드해 주세요.");
+      return;
+    }
+    run.disabled = true;
+    log.innerHTML = "정이 · 원문 근거 추출 중";
+    setAgent(agents.research, "active", 42, "작업 중 · 업로드 자료에서 핵심 근거 추출");
+    await wait(550);
+    setAgent(agents.research, "done", 100, "완료 · Evidence Pack 전달");
+    log.innerHTML += "<br>책이 · 국가별 병렬 구조 매핑 중";
+    setAgent(agents.analysis, "active", 62, "작업 중 · Ⅰ·Ⅱ·Ⅲ 구조와 국가별 절 매핑");
+    await wait(550);
+    setAgent(agents.analysis, "done", 100, "완료 · Blueprint 전달");
+    log.innerHTML += "<br>IITP · A4 10페이지급 초안 작성 중";
+    setAgent(agents.writing, "active", 82, "작업 중 · 10페이지 내외 보고서 본문 작성");
+    await wait(650);
+    sections = createDraft();
+    activeKey = "i";
+    render();
+    setAgent(agents.writing, "done", 100, "완료 · 10페이지 내외 Ⅰ·Ⅱ·Ⅲ 초안 전달");
+    log.innerHTML = '<span class="ok">정이 · 조사 완료</span><br><span class="ok">책이 · 병렬 분석 완료</span><br><span class="ok">IITP · 10페이지 내외 보고서 초안 작성 완료</span>';
+    run.disabled = false;
+  });
+
+  $("copy").addEventListener("click", async () => {
+    saveCurrent();
+    const text = ["i", "b", "s"].map((key) =>
+      sections[key].replace(/<br\s*\/?>/gi, "\n").replace(/<[^>]*>/g, " ").replace(/\s+/g, " ").trim()
+    ).join("\n\n");
+    await navigator.clipboard.writeText(text);
+    toast("전체 초안을 복사했습니다.");
+  });
+
+  $("down").addEventListener("click", () => {
+    saveCurrent();
+    const html = `<!doctype html><html lang="ko"><head><meta charset="utf-8"><title>IITP Digital Outlook 초안</title></head><body>${sections.i}${sections.b}${sections.s}</body></html>`;
+    const blob = new Blob([html], { type: "application/vnd.hancom.hwp;charset=utf-8" });
+    const link = document.createElement("a");
+    link.href = URL.createObjectURL(blob);
+    link.download = "IITP_Digital_Outlook_보고서_초안.hwp";
+    link.click();
+    URL.revokeObjectURL(link.href);
+    toast("HWP 호환 초안을 다운로드했습니다.");
+  });
+
+  renderFiles();
+  render();
+})();
+</script>
+</body></html>
